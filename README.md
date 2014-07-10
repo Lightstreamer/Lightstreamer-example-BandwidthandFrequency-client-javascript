@@ -1,4 +1,4 @@
-# Lightstreamer - Bandwidth and Frequency Demo - HTML Clients
+# Lightstreamer - Bandwidth and Frequency Demo - HTML Client
 
 This project includes a special version of [Lightstreamer - Stock-List Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript) that demonstrates two important features of Lightstreamer: bandwidth management and frequency management.<br>
 
@@ -38,15 +38,15 @@ If you want to install a version of this demo pointing to your local Lightstream
 * Get the require.js file form [requirejs.org](http://requirejs.org/docs/download.html) and put it in the src/js folder of the demo.
 * Get the zip file from [script.aculo.us](http://script.aculo.us/downloads) and put the prototype.js, scriptaculous.js, and slider.js files in the src/js/scriptaculous folder of the demo.
 
-You can deploy this demos in order to use the Lightstreamer server as Web server or in any external Web Server you are running. 
-If you choose the former case please note that in the <LS_HOME>/pages/demos/ folder there is a copy of some of the src/[demo_name] directories of this project, in other cases please create the folders <LS_HOME>/pages/demos/[demo_name] then copy here the contents of the src/[demo_name] folder of this project.<br>
-The client demos configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. If you need to targeting a different Lightstreamer server please search this line:
+You can deploy this demo in order to use the Lightstreamer server as Web server or in any external Web Server you are running. 
+If you choose the former case please create the folders <LS_HOME>/pages/demos/BandwidthDemo then copy here the contents of the src/ folder of this project.<br>
+The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. If you need to targeting a different Lightstreamer server please search this line:
 ```js
 var lsClient = new LightstreamerClient(protocolToUse+"//localhost:"+portToUse,"DEMO");
 ```
 in lsClient.js and change it accordingly.<br>
 
-The demos are now ready to be launched.
+The demo is now ready to be launched.
 
 ## Build
 
