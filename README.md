@@ -32,9 +32,7 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Get the `lightstreamer.js` file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download) and put it in the `src/js` folder of the demo (if that is the case, please create it). Alternatively, you can build a `lightstreamer.js` file from the 
-  [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html).
-  In that case, be sure to include the LightstreamerClient, Subscription, DynaGrid, ConnectionSharing, and StatusWidget modules and to use the "Use AMD" version.
+* Get the `lightstreamer.js` file from the [Lightstreamer distribution](http://www.lightstreamer.com/download) (see compatibility notes below) and put it in the `src/js` folder of the demo (if that is the case, please create it).
 * Get the `require.js` file form [requirejs.org](http://requirejs.org/docs/download.html) and put it in the `src/js` folder of the demo.
 * Get the zip file from [script.aculo.us](http://script.aculo.us/downloads) and put the `prototype.js`, `scriptaculous.js`, and `slider.js` files in the `src/js/scriptaculous` folder of the demo.
 
@@ -83,4 +81,4 @@ As an alternative, it is possible to customize the build file to use [UglifyJS](
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
+* Compatible with Lightstreamer JavaScript Client library version 6.0 to 7.x.
