@@ -17,7 +17,7 @@
     
     window.lsClient = lsClient;
     
-    lsClient.connectionOptions.setMaxBandwidth("unlimited");
+    lsClient.connectionOptions.setRequestedMaxBandwidth("unlimited");
     
     var dynaGrid = new DynaGrid("stocks",true);
     
@@ -152,7 +152,7 @@
              if (v == maxBandVal) {
                v = "unlimited";
              }  
-             lsClient.connectionOptions.setMaxBandwidth(v);
+             lsClient.connectionOptions.setRequestedMaxBandwidth(v);
            }
             //maxBandVal = v;
         }
