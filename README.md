@@ -22,7 +22,7 @@ Note that, thanks to MERGE mode, the updates are not queued and delayed, but res
 Click on the link under the table (Next/Previous 15) to dynamically switch between two lists of fifteen items and see how the initial snapshot is loaded, still respecting the bandwidth limit.
 
 The demo includes the following client-side functionalities:
-* Two [Subscriptions](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 15 items each, subscribed to in <b>MERGE</b> mode, feeding a [DynaGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/DynaGrid.html) alternately, according to the selected list.
+* Two [Subscriptions](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) containing 15 items each, subscribed to in <b>MERGE</b> mode, feeding a [DynaGrid](https://lightstreamer.com/api/ls-web-client/latest/DynaGrid.html) alternately, according to the selected list.
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-javascript-bandwidth-and-frequency-demo---html-client -->
 
@@ -32,7 +32,10 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Get the `lightstreamer.js` file from the [Lightstreamer distribution](http://www.lightstreamer.com/download) (see compatibility notes below) and put it in the `src/js` folder of the demo (if that is the case, please create it).
+* Get the `lightstreamer.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.js) and put it in the `src/js` folder of the demo (if that is the case, please create it).
+  Alternatively, you can generate a customized `lightstreamer.js` library containing only the classes you actually use;
+  see the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
+  In that case, be sure to include the LightstreamerClient, Subscription, DynaGrid, ConnectionSharing, and StatusWidget modules and to use the "Use AMD" version.
 * Get the `require.js` file form [requirejs.org](http://requirejs.org/docs/download.html) and put it in the `src/js` folder of the demo.
 * Get the zip file from [script.aculo.us](http://script.aculo.us/downloads) and put the `prototype.js`, `scriptaculous.js`, and `slider.js` files in the `src/js/scriptaculous` folder of the demo.
 
@@ -81,4 +84,6 @@ As an alternative, it is possible to customize the build file to use [UglifyJS](
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer JavaScript Client library version 6.0 to 7.x.
+* Compatible with Lightstreamer JavaScript Client library version 8.0 or newer.
+
+* For a version of this example compatible with Lightstreamer SDK for JavaScript Clients version 7.x or earlier, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-BandwidthandFrequency-client-javascript/releases/tag/latest-for-client-7.x).
