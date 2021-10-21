@@ -6,8 +6,8 @@ This project includes a special version of [Lightstreamer - Stock-List Demos - H
 
 ## Live Demo
 
-[![Demo ScreenShot](screen_bandwidth_large.png)](http://demos.lightstreamer.com/BandwidthDemo)<br>
-### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/BandwidthDemo)<br>
+[![Demo ScreenShot](screen_bandwidth_large.png)](https://demos.lightstreamer.com/BandwidthDemo/)<br>
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](https://demos.lightstreamer.com/BandwidthDemo/)<br>
 
 ## Details
 
