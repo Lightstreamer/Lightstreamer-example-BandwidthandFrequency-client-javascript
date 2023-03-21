@@ -23,7 +23,6 @@ define(["LightstreamerClient","StatusWidget"],function(LightstreamerClient,Statu
     
     var lsClient = new LightstreamerClient(protocolToUse+"//localhost:"+portToUse,"DEMO");
     
-    // No sharing for this demo. //lsClient.connectionSharing.enableSharing("DemoCommonConnection", "ATTACH", "CREATE");
     lsClient.addListener(new StatusWidget("left", "0px", true));
     lsClient.connect();
     
